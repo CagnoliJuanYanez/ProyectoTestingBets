@@ -1,6 +1,7 @@
 package domain;
 
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Vector;
 
 import javax.persistence.CascadeType;
@@ -74,7 +75,7 @@ public class Apustua implements Serializable{
 	}
 	
 	public boolean galdutaMarkatu(Quote quo) {
-		if(kuota.getQuestion().getQuestionNumber()==quo.getQuestion().getQuestionNumber() && quo.getQuoteNumber()!=kuota.getQuoteNumber()) {
+		if(kuota.getQuestion().getQuestionNumber().equals(quo.getQuestion().getQuestionNumber()) && quo.getQuoteNumber().equals(kuota.getQuoteNumber())) {
 			this.egoera="galduta";
 			return true;
 		}
@@ -93,4 +94,10 @@ public class Apustua implements Serializable{
 		}
 		return this.getApostuaNumber().equals(a.getApostuaNumber()); 
 	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(apustuaNumber);
+	}
+
 }

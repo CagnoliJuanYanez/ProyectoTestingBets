@@ -1,6 +1,7 @@
 package domain;
 
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Vector;
 
 import javax.persistence.CascadeType;
@@ -89,5 +90,10 @@ public class Sport implements Serializable{
 			return false;
 		}
 		return this.izena.equals(sp.getIzena());
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(izena);
 	}
 }

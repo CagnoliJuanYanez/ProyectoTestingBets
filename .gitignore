@@ -18,6 +18,9 @@ local.properties
 # External tool builders
 .externalToolBuilders/
 
+# Sonar
+.scannerwork/
+
 # Locally stored "Eclipse launch configurations"
 *.launch
 

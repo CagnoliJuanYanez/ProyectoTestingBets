@@ -15,7 +15,6 @@ import domain.ElkarrizketaContainer;
 import domain.Event;
 import domain.Message;
 import domain.MezuakContainer;
-//import domain.Booking;
 import domain.Question;
 import domain.Quote;
 import domain.Registered;

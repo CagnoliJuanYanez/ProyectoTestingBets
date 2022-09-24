@@ -26,7 +26,6 @@ public class ElkarrizketaRenderer extends JLabel implements ListCellRenderer<Elk
 	            boolean isSelected, boolean cellHasFocus) {
 	 
 	    	setText(elkarrizketa.toString());
-	    	String code = "m1"; 
 	    	
 	    	 ImageIcon imageIcon = new ImageIcon(".\\src/main/resources\\data\\"+elkarrizketa.getElka().denakIrakurrita(user)+".png"); // load the image to a imageIcon
 		     Image image = imageIcon.getImage(); // transform it 

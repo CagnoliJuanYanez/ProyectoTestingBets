@@ -1,7 +1,0 @@
-sonar.organization=cagnolijuanyanez
-sonar.projectKey=betsSonarLab
-sonar.projectName=betsSonarLab
-sonar.projectVersion=0.0.1
-sonar.sources=src
-tests=src
-binaries=bin
